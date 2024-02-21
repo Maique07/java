@@ -30,16 +30,15 @@ igual a 0.*/
     }
 
     public static void main(String[] args) {
-        int x;
+        int x = -1;
         int a;
-        String c = JOptionPane.showInputDialog("obs numero tem que ser maior ou igual a zero\ninforme um numero inteiro: ");
-        x = Integer.parseInt(c);
-        if (x <= -1) {
-            JOptionPane.showMessageDialog(null, "numero invalido");
-        } else {
-            a = digitos(x);
-            JOptionPane.showMessageDialog(null, "o numero de digitos é " + a);
+        while (x < 0) {
+            String c = JOptionPane.showInputDialog("obs numero tem que ser maior ou igual a zero\ninforme um numero inteiro: ");
+            x = Integer.parseInt(c);
+            if (x >= 0){ 
+                a = digitos(x);
+                JOptionPane.showMessageDialog(null, "o numero de digitos é " + a);
+            }
         }
-
     }
 }
