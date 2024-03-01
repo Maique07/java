@@ -15,6 +15,9 @@ public class livraria {
         qt = Integer.parseInt(a);
         float v1 = (float) ((qt * 0.25) + 7.50);
         float v2 = (float) ((qt * 0.50) + 2.50);
+        if (v1 == v2) {
+            JOptionPane.showMessageDialog(null, "criterio A " + v1 + "\ncriterio B " + v2 + "\no tanto faz");
+        }
         if (v1 < v2) {
             JOptionPane.showMessageDialog(null, "criterio A "+v1+"\ncriterio B "+v2+"\no melhor desconto é a 1 opção");
         }
