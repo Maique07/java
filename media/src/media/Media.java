@@ -31,9 +31,9 @@ public class Media {
 
             f = (media + not_recup) / 2;
             if (f >= 5) {
-                JOptionPane.showMessageDialog(null, "aluno aprovado na recuperação");
+                JOptionPane.showMessageDialog(null, "aluno aprovado na recuperação\n nota = "+ f);
             } else {
-                JOptionPane.showMessageDialog(null, "aluno reprovou");
+                JOptionPane.showMessageDialog(null, "aluno reprovou\n nota = "+ f);
             }
         }
     }
